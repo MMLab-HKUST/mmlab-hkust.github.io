@@ -150,35 +150,32 @@
                             <br>
                             PhD Students:
                             <br>
-                            <a href="https://refkxh.github.io/">Xianghao Kong</a>
-                            (HKPFS, Beihang University, Ranking Top 1%, Two National Scholarships)
-                            <br>
-
-                            <a href="https://www.zhangtianyi.page/">Tony Zhang</a>
-                            (Nanyang Technological University, Assistant Lecturer at Hong Kong Design Institute, Three Years at TVB and Digital Domain)
+                            <a href="https://scholar.google.com/citations?user=yQ0CXqUAAAAJ">Xianghao Kong</a>
+                            (HKPFS, Tencent Project UP Scholarship, 5 First-author Paper,
+                            Beihang University, Ranking Top 1%, Two National Scholarships)
                             <br>
                           
-                            <a href="https://www.zhengwei302.com/">Zheng Wei</a>
-                            (Beijing Film Academy, with Prof. Huamin Qu and Prof. Pan Hui, Over 10 First-author Papers)
-                            <br>
-
                             <a href="https://jiayzhou.github.io/">Jiayi Zhou</a>
-                            (Zhejiang University, with Prof. Huamin Qu)
+                            (ACM DIS Best Paper, Zhejiang University, with Prof. Huamin Qu)
                             <br>
                             
                             <a href="https://alicezrzhao.github.io/">Zhuoran Zhao</a>
                             (National University of Singapore, with Prof. Pan Hui)
                             <br>
 
+                            <a href="https://www.zhangtianyi.page/">Tony Zhang</a>
+                            (Co-Founding Chair of HKUST AI Film Festival, NTU, Assistant Lecturer at Hong Kong Design Institute)
+                            <br>
+
+                            <a href="https://songlin1998.github.io/">Songlin Yang</a>
+                            (Tencent Project UP Scholarship, 7 First-author Paper, CASIA, Ranking Top 1%, Two National Scholarships)
+                            <br>
+
                             <a href="https://scholar.google.com/citations?user=9M7ln4gAAAAJ&hl=en">Songchun Zhang</a>
                             (Zhejiang University, Three National Scholarships)
                             <br>
-                            
-                            <a href="https://songlin1998.github.io/">Songlin Yang</a>
-                            (Chinese Academy of Sciences, Ranking Top 1%, Two National Scholarships)
-                            <br>
-
-                            <a href="https://johnnyzhang728.github.io/">Zeyu Zhang</a> (University of Hong Kong),
+                                                        
+                            <a href="https://scholar.google.com/citations?user=b5fSeOsAAAAJ&hl=zh-CN">Zeyu Zhang</a> (University of Hong Kong)
                             <br>
 
                             <a href="">Yiyang Luo</a> (Nanyang Technological University, with Prof. Celine Song)
@@ -190,7 +187,23 @@
                             <a href="">Zhe Wang</a> (ShanghaiTech University)
                             <br>
                             
-                                                 <br>
+                            <a href="https://yinhan-zhang.github.io/">Longji Huang</a>
+                            (HKPFS, University of Toronto, Dean’s List in Four Consecutive Years)
+                            <br>
+
+                            <a href="https://scholar.google.com/citations?user=2XFA6oYAAAAJ&hl=zh-CN">Fangyuan Mao</a>
+                            (9 First-author Paper, Chinese Academy of Sciences, Ranking Top 1%, Two National Scholarships, with Prof. Celine Song)
+                            <br>
+
+                            <a href="https://scholar.google.com/citations?user=9M7ln4gAAAAJ&hl=en">Mingchen Li</a>
+                            (Hong Kong University of Science and Technology Guangzhou, Red Bird Scholarship, with Prof. Celine Song)
+                            <br>
+
+                            <a href="https://yinhan-zhang.github.io/">Yinhan Zhang</a>
+                            (Hong Kong University of Science and Technology Guangzhou, Red Bird Scholarship)
+                            <br>
+
+                            <br>
                             Artists:
                             <br>
                             <a href="">Shiqin Hou</a> 
@@ -223,9 +236,17 @@
                             <br>
                             
                             <a href="">Zeqian Zhang</a> (City Univeristy of Hong Kong)
+                            <br>
 
+                            <a href="">Pei Yang</a> (City Univeristy of Hong Kong)
 
-
+                            <br>
+                            <br>
+                            PhD Alumni:
+                            <br>
+                            <a href="https://www.zhengwei302.com/">Zheng Wei</a>
+                            (Beijing Film Academy, with Prof. Huamin Qu and Prof. Pan Hui, Over 10 First-author Papers)
+                            <br>
                         </div>
                     </div>
 
@@ -297,7 +318,7 @@
 
       function setParallaxPosition($doc, multiplier, $object){
         var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
+        var from_top = $doc.scrollTop()
           bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
         $object.css({"background-position" : bg_css });
       }
@@ -328,7 +349,7 @@
         $(window).scroll(function(){
           if($(window).width() > 768) {
             var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
+                pos = $(window).scrollTop()
                 yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
 
             var bg_css = 'center ' + yPos + 'px';
@@ -342,13 +363,13 @@
       
       $(function(){
         // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#whoweare"), 0.80);   
+        background_image_parallax($(".tm-parallax") 0.30, false);
+        background_image_parallax_2($("#contact") 0.80);   
+        background_image_parallax_2($("#whoweare") 0.80);   
         
         // Handle window resize
         window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
+          background_image_parallax($(".tm-parallax") 0.30, true);
         }, true);
 
         // Detect window scroll and update navbar
