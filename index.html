@@ -84,7 +84,7 @@
               </div>
               <div class="col-lg-5">
                   <div class="tm-intro-text-container">
-                    <h2 class="tm-text-primary mb-4">Trustworthy Agentic AI</h2>
+                    <h2 class="tm-text-primary mb-4">Multimodal Agentic AI</h2>
                     <p class="mb-4 tm-intro-text">
                       Prioritize transparency, steerability, and robustness to build trustworthy multiagent systems through AI orchestration that users can understand and control.</p>
                   </div>
@@ -96,7 +96,7 @@
               </div>
               <div class="col-lg-5">
                   <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4"> AI for Creativity</h2>
+                      <h2 class="tm-text-primary mb-4"> Generative AI for Creativity</h2>
                       <p class="mb-4 tm-intro-text">
                         Invent tools and algorithms to expand artistic expression, blending human ingenuity with AI-generated art, film, music, and narratives.
                       </p>
@@ -122,7 +122,7 @@
               </div>
               <div class="col-lg-5">
                   <div class="tm-intro-text-container">
-                    <h2 class="tm-text-primary mb-4"> AI for Good</h2>
+                    <h2 class="tm-text-primary mb-4">Trustworthy AI for Good</h2>
                       <p class="mb-4 tm-intro-text">
                         Drive global impact through inclusive, socially responsible AI applications in healthcare, education, sustainability, and underserved communities.</p>
                   </div>
@@ -172,7 +172,7 @@
                             <br>
 
                             <a href="https://scholar.google.com/citations?user=9M7ln4gAAAAJ&hl=en">Songchun Zhang</a>
-                            (Zhejiang University, Three National Scholarships)
+                            (Zhejiang University, Three National Scholarships, National AI Scholaship)
                             <br>
                                                         
                             <a href="https://scholar.google.com/citations?user=b5fSeOsAAAAJ&hl=zh-CN">Zeyu Zhang</a> (University of Hong Kong)
@@ -181,10 +181,10 @@
                             <a href="">Yiyang Luo</a> (Nanyang Technological University, with Prof. Celine Song)
                             <br>
 
-                            <a href="">Yihang Jiang</a> (Hong Kong University of Science and Technology)
+                            <a href="">Yihang Jiang</a> (Hong Kong University of Science and Technology, National AI Scholaship)
                             <br>
                             
-                            <a href="">Zhe Wang</a> (ShanghaiTech University)
+                            <a href="">Zhe Wang</a> (ShanghaiTech University, National AI Scholaship)
                             <br>
                             
                             <a href="https://yinhan-zhang.github.io/">Longji Huang</a>
@@ -196,13 +196,13 @@
                             <br>
 
                             <a href="https://scholar.google.com/citations?user=9M7ln4gAAAAJ&hl=en">Mingchen Li</a>
-                            (Hong Kong University of Science and Technology Guangzhou, Red Bird Scholarship, with Prof. Celine Song)
+                            (HKUSTGZ, Red Bird Scholarship, National AI Scholaship, with Prof. Celine Song)
                             <br>
 
                             <a href="https://yinhan-zhang.github.io/">Yinhan Zhang</a>
-                            (Hong Kong University of Science and Technology Guangzhou, Red Bird Scholarship)
+                            (HKUSTGZ, Red Bird Scholarship, National AI Scholaship)
                             <br>
-
+                            
                             <br>
                             Artists:
                             <br>
@@ -222,31 +222,30 @@
                             (Tsinghua University Academy of Art and Design, Ranking Top 1%, Over 20 Exhibitions)
                             <br>
                             
-                            
-
                             <br>
                             Research Assistants:
                             <br>
                             <a href="https://scholar.google.com/citations?user=IWvL8Y0AAAAJ&hl=en">Houyuan Chen</a>
-                            (Nanjing University, Ranking Top 1%, National Scholarship)
+                            (Nanjing University, Ranking Top 1%, National Scholarship),
                             <br>
                             
                             <a href="https://openreview.net/profile?id=~Xuyi_Yang1">Xuyi Yang</a>
-                            (Wuhan University, Ranking Top 1%, Two National Scholarships)
+                            (Wuhan University, Ranking Top 1%, Two National Scholarships),
                             <br>
                             
                             <a href="">Zeqian Zhang</a> (City Univeristy of Hong Kong)
                             <br>
 
-                            <a href="">Pei Yang</a> (City Univeristy of Hong Kong)
+                            <a href="">Pei Yang</a> (Wuhan Univeristy)
 
                             <br>
                             <br>
                             PhD Alumni:
                             <br>
                             <a href="https://www.zhengwei302.com/">Zheng Wei</a>
-                            (Beijing Film Academy, with Prof. Huamin Qu and Prof. Pan Hui, Over 10 First-author Papers)
+                            (Beijing Film Academy, with Prof. Huamin Qu and Prof. Pan Hui, 15 First-author Papers)
                             <br>
+
                         </div>
                     </div>
 
@@ -318,7 +317,7 @@
 
       function setParallaxPosition($doc, multiplier, $object){
         var offset = getOffSet();
-        var from_top = $doc.scrollTop()
+        var from_top = $doc.scrollTop(),
           bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
         $object.css({"background-position" : bg_css });
       }
@@ -349,7 +348,7 @@
         $(window).scroll(function(){
           if($(window).width() > 768) {
             var firstTop = $object.offset().top,
-                pos = $(window).scrollTop()
+                pos = $(window).scrollTop(),
                 yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
 
             var bg_css = 'center ' + yPos + 'px';
@@ -363,13 +362,13 @@
       
       $(function(){
         // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax") 0.30, false);
-        background_image_parallax_2($("#contact") 0.80);   
-        background_image_parallax_2($("#whoweare") 0.80);   
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);   
+        background_image_parallax_2($("#whoweare"), 0.80);   
         
         // Handle window resize
         window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax") 0.30, true);
+          background_image_parallax($(".tm-parallax"), 0.30, true);
         }, true);
 
         // Detect window scroll and update navbar
